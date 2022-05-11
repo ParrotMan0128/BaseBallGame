@@ -13,7 +13,7 @@ int main()
 
     int iStrike;
     int iBall;
-    int playTime = 1;
+    int iGameCount = 1;
 
     for (int i = 0; i < 9; i++) {
 
@@ -40,7 +40,7 @@ int main()
 
     while (true) {
 
-        cout << "[ " << playTime << "회 ]" << "1 ~ 9 사이의 숫자 3개를 차례대로 입력해주세요(ex) 1 2 3) (0: 종료) | ";
+        cout << "[ " << iGameCount << "회 ]" << "1 ~ 9 사이의 숫자 3개를 차례대로 입력해주세요(ex) 1 2 3) (0: 종료) | ";
         cin >> iInput[0] >> iInput[1] >> iInput[2];
 
         if ( (iInput[0] == 0) || (iInput[1] == 0) || (iInput[2] == 0) ) {
@@ -88,7 +88,7 @@ int main()
 
                 cout << iStrike << " Strike | " << iBall << " Ball" << endl;
 
-                playTime++;
+                iGameCount++;
 
                 continue;
 
